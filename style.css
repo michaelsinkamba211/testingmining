@@ -398,6 +398,7 @@ section .service-tittle{
 .services .service-four .service-description p{
     padding: 1px 10px;
     font-size: .91rem;
+    text-align: center
 }
 
 .services .service-one .button-link a,
@@ -473,7 +474,7 @@ section .service-tittle{
     font-size: 1.1rem;
 }
 .services-video .content p{
-    font-size: .95rem;
+    font-size: .91rem;
 }
 
 .services-video .container{
