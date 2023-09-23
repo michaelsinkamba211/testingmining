@@ -17,7 +17,10 @@
 body{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
+    background-color: rgba(135, 206, 250, 0.1);
 }
+
+
 
 section,
 header,
@@ -232,14 +235,18 @@ nav input{
     background: url(./images/small.jpg) center/cover no-repeat;
     position: relative;
     margin-top: 50px;
+    margin-bottom: 100px;
     z-index: -1;
+    border-radius: 100% 0% 60% 40% / 0% 58% 42% 100% ;
+    
 }
-
+/* 
 @media screen and (max-width:600px){
     .home-section{
         background: url(./images/large.jpg) center/cover no-repeat;
+        border-radius: 100% 0% 81% 19% / 0% 58% 42% 100% ;
     }
-}
+} */
 
 
 .home-section::before{
@@ -251,6 +258,18 @@ nav input{
     left: 0;
     background-color: rgba(0,0,0,0.4);
     z-index: -1;
+    border-radius: 100% 0% 60% 40% / 0% 58% 42% 100% ;
+}
+
+@media screen and (max-width:600px){
+    .home-section{
+        background: url(./images/large.jpg) center/cover no-repeat;
+        border-radius: 100% 0% 81% 19% / 0% 58% 42% 100% ;
+    }
+
+    .home-section::before{
+        border-radius: 100% 0% 81% 19% / 0% 58% 42% 100% ;
+    }
 }
 
 
@@ -270,6 +289,7 @@ nav input{
     text-align: center;
     padding: 100px 0;
     height: 100dvh;
+    
 }
 
 .home-section .home-content .tittle{
@@ -318,7 +338,7 @@ nav input{
 
 
 /* home section done */
-
+/* he */
 
 .services{
     margin-top: 50px;
@@ -423,6 +443,12 @@ section .service-tittle{
 
 
 /* video section section */
+
+/* .features-aside{
+    background-color: rgba(135, 206, 250, 0.05);
+    padding: 10px 0;
+} */
+
 
 .services-video{
     display: flex;
@@ -538,6 +564,7 @@ section .service-tittle{
 
 .features .features-paragraph{
     margin:40px 20px;
+    font-size: .91rem;
 }
 
 .features .first-feature,
@@ -559,7 +586,7 @@ section .service-tittle{
 .features .first-feature .image-banner,
 .features .second-feature .image-banner,
 .features .third-feature .image-banner {
-    background: url(./images/tractors.png) center/cover no-repeat;
+    background: url(./images/truck.PNG) center/cover no-repeat;
     position: relative;
     width: 250px;
     height: 200px;
@@ -568,7 +595,7 @@ section .service-tittle{
 }
 
 .features .second-feature .image-banner{
-    background: url(./images/drills.png) center/cover no-repeat;
+    background: url(./images/drill.PNG) center/cover no-repeat;
     width: 270px;
 }
 
@@ -592,14 +619,17 @@ section .service-tittle{
 
 .features .second-feature .content{
     order: 2;
+    font-size: .91rem;
 }
 
 .features .second-feature .image-banner {
     order: 1;
+
 }
 
 .features .third-feature .content{
     order: 2;
+
 }
 
 .features .third-feature .image-banner {
@@ -617,7 +647,7 @@ section .service-tittle{
     .features .first-feature .image-banner,
     .features .second-feature .image-banner,
     .features .third-feature .image-banner {
-        background: url(./images/tractors.png) center/cover no-repeat;
+        background: url(./images/truck.PNG) center/cover no-repeat;
         margin: 0 auto;
     }
 
@@ -643,7 +673,7 @@ section .service-tittle{
         display: flex;
         justify-content: center;
         align-items: center;
-    
+        
     }
 
     .features .second-feature .content{
